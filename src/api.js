@@ -17,7 +17,6 @@ export const paginationAPI = async (offset = 0) => {
 
 export const fetchAllPokemons = async () => {
   const res = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=1500");
-
   return res.status === 200 ? res.data.results : [];
 };
 

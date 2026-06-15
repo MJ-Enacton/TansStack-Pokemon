@@ -188,6 +188,8 @@ export default function App() {
     );
   }
 
+
+
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans pb-24 relative overflow-x-hidden">
       {/* Header Banner */}

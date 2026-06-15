@@ -24,11 +24,6 @@ const typeColors = {
   steel: { bg: "bg-slate-400", text: "text-zinc-950", border: "border-slate-500/30", shadow: "shadow-slate-400/10 hover:shadow-slate-400/30", gradient: "from-zinc-900 via-zinc-900 to-slate-900 hover:border-slate-500/60" },
 };
 
-const getPokemonId = (url) => {
-  const parts = url.split("/");
-  return parts[parts.length - 2];
-};
-
 export default function Pokemon({ data, setSelectedPokemon, squad, toggleSquad }) {
   // Parallel query setup using TanStack useQueries
   const results = useQueries({
